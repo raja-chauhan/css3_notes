@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 text overflow</title>
+    <style>
+        .test {
+            border: 2px solid red;
+            width: 50px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow:" - " ;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">CSS3 text overflow</h1>
+    use along with white-space
+    <b>Note : Some browser not supported</b>
+    <ol>
+        <li>text-overflow : hidden  ellipsis(...)  </li>
+    </ol>
+
+    <div class="test">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis minima non doloribus. Rem eveniet quisquam
+        corrupti molestias, odio id consectetur cum eum facilis voluptates harum sit ullam, labore exercitationem
+        maxime!
+    </div>
+</body>
+
+</html>

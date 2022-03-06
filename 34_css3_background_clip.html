@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 background clip</title>
+    <style>
+        body{
+            background-color: gold;
+
+        }
+        h1{
+            color:transparent;
+            background-image: url(image.jpg);
+            font-size: 70px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            /* -webkit-background-clip: text; */
+        }
+        .box {
+            width:800px;
+            min-height: 300px;
+            padding: 30px;
+            color: black;
+            text-align: justify;
+            border: 2px solid black;
+            background-color: white;
+            background-clip: content-box;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">CSS3 Background Clip</h1>
+    help to set background color on specifi areas.
+    <ul>
+        <li>padding-box</li>
+        <li>border-box</li>
+        <li>content-box</li>
+        <li>text (experimental) --> awesome</li>
+    </ul>
+
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore soluta nobis ratione labore, eum ullam iste
+            rerum iure autem. Magnam ducimus iusto, consequatur ad eos mollitia sit quos iure hic, ut exercitationem
+            eaque velit odit ipsa? Asperiores et quod voluptatibus repellendus quae enim assumenda in dolore dignissimos
+            nam? Dolorem omnis rerum sed deleniti? Nemo voluptas doloribus eum veniam ex, nesciunt debitis voluptatibus!
+            Vero quasi ex eaque, odit quo fugit, exercitationem asperiores omnis suscipit tempora atque aut quibusdam
+            incidunt placeat aliquid itaque dignissimos dolore pariatur officia iste ab commodi. Iure qui iste ea
+            voluptatem debitis aliquam magni ut, reiciendis maiores consequatur? Qui quisquam accusamus quam eos!
+            Debitis animi ratione ipsa! Odio adipisci qui assumenda voluptatibus eum non recusandae magnam numquam
+            officia eius nesciunt molestias harum cupiditate quasi, eligendi et laboriosam necessitatibus quae at saepe
+            beatae! Atque delectus explicabo vitae praesentium nulla blanditiis nostrum tempore dolores optio autem illo
+            nihil magnam culpa hic voluptatem libero suscipit numquam quae, maiores harum! Eius, quaerat consequuntur
+            ut, odio, at suscipit corporis optio modi amet possimus laudantium officiis sequi aliquam numquam provident
+            blanditiis cum repellendus rem? Quibusdam eius dicta voluptates voluptatibus cupiditate quia, quae quaerat
+            pariatur, possimus eaque quasi explicabo et inventore rem repudiandae ipsam tempore velit numquam maiores
+            veniam officia mollitia ea dolore! Id laboriosam voluptate assumenda doloremque numquam nemo itaque sapiente
+            temporibus rerum. Illum minima, unde harum laudantium quam itaque illo, praesentium impedit nemo dignissimos
+            libero velit asperiores. Deserunt eius modi autem necessitatibus doloribus voluptatem hic. Nisi praesentium
+            consequatur aliquid placeat ab veritatis natus neque maxime amet modi harum error repellendus ipsam alias
+            eligendi eveniet, consectetur saepe fuga odit facere cumque reiciendis tempora! Fugiat in recusandae, animi
+            ad officia nostrum ipsum cum fuga similique atque deserunt natus velit eligendi incidunt libero? Distinctio
+            labore corporis fugit fuga rerum temporibus, necessitatibus perspiciatis laboriosam esse laborum assumenda!
+        </p>
+    </div>
+
+</body>
+
+</html>

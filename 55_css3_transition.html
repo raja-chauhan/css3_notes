@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Transition</title>
+    <style>
+        .box{
+            border: 2px solid red;
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+
+            transition-property: width,height,background-color;
+            transition-duration: 4s,4s,4s;
+
+
+        }
+        .box:hover {
+            width: 400px;
+            height: 400px;
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center"> CSS3 Transition </h1>
+    Transition means smoothness for eg if you increase the width of div on hover so it will 
+    allow you to do it slowly instead of in one fraction of time.
+    <ol>
+        <li>transition</li>
+        <li>transition-property ->on width,color,height etc.</li>
+        <li>transition-duration -> animation time</li>
+        <li>transition-delay -> start animation after how much time</li>
+        <li>transition-timing-function -> </li>
+    </ol>
+    <img src="transition.png" width="500px" height="500px" />
+    
+
+
+    <div class="box">
+
+    </div>
+</body>
+</html>

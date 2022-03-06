@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+             background-color: aqua;
+             font-family: 'Courier New', Courier, monospace;
+        }
+        @media screen and (max-width:1200px) {
+            body{
+                background-color: blue;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">CSS3 Media Query</h1>
+    <b>viewport --> total width of screen for eg -> 1920 1440 1366 1024 700-900(tab) 320-480(mobile)</b>
+    <ol>
+        <li>All</li>
+        <li>Print -> set css to print website</li>
+        <li>Screen -> set css for screen</li>
+        <li>Speech</li>
+
+    </ol>
+    <pre>
+    basic syntax 
+    @media screen and (max-width:900px) {
+        .container {
+            width:50%;
+        }
+    }
+    logical operator can be use are --> And Not only
+</pre>
+    <img src="media.png" width="50%" height="50%" />
+</body>
+
+</html>

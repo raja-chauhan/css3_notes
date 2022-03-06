@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 basic layout</title>
+    <style>
+        :root {
+            --main-color : rgb(231, 193, 193);
+        }
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            background: slategray;
+        }
+        #wrapper{
+            border: 1px solid black;
+            width:1200px;
+            background:var(--main-color);
+            margin: 0 auto;
+        }
+        #header h1 {
+            margin: 0px;
+            padding: 0px;
+            color: gold;
+            
+        }
+        #header {
+            background: rgb(189, 170, 174);
+            height: 100px;
+        }
+        #header h1 {
+            padding: 40px 0px 20px 0px;
+            color: var(--main-color);
+        }
+        #menu {
+            background: lightsalmon;
+        }
+        #menu li {
+            display: inline-block;
+        }
+        #menu li a {
+            display: block;
+            padding: 5px 10px;
+            text-decoration: none;
+            color: black;
+        }
+        #menu li a:hover {
+            background: crimson;
+            color: white;
+        }
+        #menu ul {
+            padding: 0px;
+            margin: 0px;
+        }
+        #footer {
+            background: var(--main-color);
+            clear: both;
+            padding: 5px 10px;
+            text-align: right;
+        }
+        #content {
+            width: 800px;
+            float: left;
+            min-height: 500px;
+            box-sizing: border-box;
+        }
+
+        #sidebar {
+            /* background: ; */
+            width: 200px;
+            float: right;
+            background: olive;
+            min-height: 500px;
+        }
+        #sidebar a {
+            text-decoration: none;
+            color: black;
+        }
+        #sidebar li a:hover {
+            background: crimson;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">CSS3 Variable function</h1>
+    <pre>  :root {
+        --main-color : red;     
+    }
+    // using Variable 
+    .classA {
+        color : var(--main-color);
+    }
+    .classB {
+        background-color : var(--main-color);
+    }
+
+</pre>
+    <div id="wrapper">
+        <div id="header">
+            <h1>WebSite Name</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h2> Basic title</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore quae molestiae nulla ex itaque ut
+                sequi eligendi, sint officia dignissimos, molestias harum nobis quaerat! Iure doloribus, officiis, fugit
+                iusto dolorum placeat eligendi fugiat iste molestias velit excepturi aliquam laudantium unde! Quos error
+                autem inventore fugit fugiat debitis eligendi ab eaque cupiditate enim, odio necessitatibus. Delectus
+                repellendus praesentium quia aspernatur nobis necessitatibus illum optio doloremque, reprehenderit
+                soluta, nemo natus. Omnis est mollitia eligendi natus distinctio necessitatibus inventore unde id
+                consectetur sapiente?</p>
+        </div>
+        <div id="sidebar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="footer">
+            admin@website.com website@2022
+        </div>
+
+    </div>
+
+</body>
+
+</html>
